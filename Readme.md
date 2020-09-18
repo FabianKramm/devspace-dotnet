@@ -1,13 +1,14 @@
-﻿# Hello World .NET Core Application
+﻿# Devspace.cloud with Hello World .NET Core Application
 
-# Run locally
+# Run devspace dev from root folder.
 ```
-dotnet run --project hello-world-api
+devspace dev
 ```
-Then launch your browser and access http://localhost:5000/api/hello
+Then launch your browser and access http://localhost:5004/api/hello
 
-# Deploy to Cloud Foundry
+# Error launching the container
 ```
-cf push
+Couldn't find a project to run. Ensure a project exists in /app/hello-world-api, or pass the path to the project using --project.
+
 ```
-Follow the console output to gather the url
+
