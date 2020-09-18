@@ -11,4 +11,4 @@ Then launch your browser and access http://localhost:5004/api/hello
 Couldn't find a project to run. Ensure a project exists in /app/hello-world-api, or pass the path to the project using --project.
 
 ```
-
+in the container folder, /app/hello-world-api, all the files located in the context are copied and should not.
