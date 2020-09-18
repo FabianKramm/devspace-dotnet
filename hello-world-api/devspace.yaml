@@ -1,0 +1,50 @@
+version: v1beta9
+images:
+  app:
+    image: levelapp/dotnethelloworldmasterstand
+    dockerfile: ./Dockerfile
+    preferSyncOverRebuild: true
+    injectRestartHelper: true
+    entrypoint: 
+    - dotnet
+    - run
+    appendDockerfileInstructions:
+    - USER root
+    build:
+      docker:
+        options:
+          target: build
+deployments:
+- name: dotnet-hello-world-master-stand
+  helm:
+    componentChart: true
+    values:
+      containers:
+      - image: levelapp/dotnethelloworldmasterstand
+      service:
+        ports:
+        - port: 5004
+dev:
+  ports:
+  - imageName: app
+    forward:
+    - port: 5004
+  open:
+  - url: http://localhost:5004
+  sync:
+  - imageName: app
+    excludePaths:
+    - .git/
+    uploadExcludePaths:
+    - devspace.yaml
+    onUpload:
+      restartContainer: true
+profiles:
+- name: production
+  patches:
+  - op: remove
+    path: images.app.injectRestartHelper
+  - op: remove
+    path: images.app.appendDockerfileInstructions
+  - op: remove
+    path: images.app.build.docker.options.target

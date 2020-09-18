@@ -1,0 +1,8 @@
+{"level":"info","msg":"Start syncing","time":"2020-09-18T17:26:57+02:00"}
+{"level":"info","msg":"Upstream - Upload File /Controllers/HelloController.cs","time":"2020-09-18T17:28:22+02:00"}
+{"level":"info","msg":"Upstream - Upload File /Controllers/HelloController.cs","time":"2020-09-18T17:28:22+02:00"}
+{"level":"info","msg":"Upstream - Upload 2 create changes (size 842)","time":"2020-09-18T17:28:22+02:00"}
+{"level":"info","msg":"Upstream - Successfully processed 2 change(s)","time":"2020-09-18T17:28:22+02:00"}
+{"level":"info","msg":"Upstream - Restarting container","time":"2020-09-18T17:28:22+02:00"}
+{"level":"info","msg":"Downstream - Download 4 files (size: 15768)","time":"2020-09-18T17:28:28+02:00"}
+{"level":"info","msg":"Downstream - Successfully processed 4 change(s)","time":"2020-09-18T17:28:28+02:00"}

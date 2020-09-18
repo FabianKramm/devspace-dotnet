@@ -1,0 +1,16 @@
+profiles:
+  "":
+    deployments:
+      dotnet-hello-world-master-stand:
+        deploymentConfigHash: a7fa056610375567ba31d49b161db81ca671c1ddba0a5de3e939b9cdfed951d4
+    images:
+      app:
+        imageConfigHash: 79f00f6f65144d8af5b7bd99bf28e04a7cdb75db2818852eafa791358c0610c2
+        dockerfileHash: b41ae01e28b1e3ec9f517caa5d4a6aff440614d5ebc50c4e0d69c351e07b682a
+        contextHash: 78b6cde05c9ff15fa9b9207c7fcdc33821b79f818d901eda6584e42c505919eb
+        entrypointHash: 671ec77ead1fd252103c92bf20388d4308cf18841accb85fa1c0d7a28dc820c6
+        imageName: levelapp/dotnethelloworldmasterstand
+        tag: 8U2D9nw
+    lastContext:
+      namespace: test
+      context: docker-desktop
